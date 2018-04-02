@@ -4,13 +4,15 @@ function validaAA(valor, minValor, maxValor) {
     return valor;
 }
 
-
+/**
+ * 
+ * @param {string} color css color
+ */
 function validaColor(color) {
     let div0 = document.createElement("div");
     div0.style.background = color;
     return div0.style.background;
-}
-
+    }
 
 class Gauge {
     constructor(ancho, alto, texto, color1, color2) {
@@ -98,7 +100,7 @@ function inicializar() {
         v < 100 ? v = v + 10 : v = 0;
         g1.ponValorGauge(v);
     }
-    setInterval(animacion, 100);
+    setInterval(animacion, 250);
 
 }
 
